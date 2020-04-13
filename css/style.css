@@ -264,6 +264,7 @@ nav ul li a b {
 
 .projects .project-wrapper .project-wrapper-inner {
   background: rgba(170, 31, 117, 0.9);
+  color: white;
   border-radius: 1em;
   top: 0px;
   height: 100%;
@@ -271,18 +272,33 @@ nav ul li a b {
   opacity: 0;
   position: absolute;
   padding: 20px;
+  line-height: 1em;
   z-index: 1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: white;
 }
 
 .projects .project-wrapper .project-wrapper-inner h6 {
   font-weight: 600;
 }
 
-.projects .project-wrapper .project-wrapper-inner li {
+.projects .project-wrapper .project-wrapper-inner p {
+  margin-bottom: .3em;
+}
+
+.projects .project-wrapper .project-wrapper-inner ul {
+  width: 80%;
+  text-align: left;
+}
+
+.projects .project-wrapper .project-wrapper-inner ul li {
+  display: inline-block;
+  overflow: wrap;
+  margin: .2em;
+  padding: .2em;
   list-style-type: none;
+  border: 1px dotted white;
+  border-radius: 10%;
 }
 
 .contacts .btn {

@@ -4,6 +4,10 @@ html, body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+html h4, html h5, body h4, body h5 {
+  margin-top: 1em;
+}
+
 header {
   margin: 0px;
   padding: 40px;
@@ -73,6 +77,7 @@ nav ul li a b {
 }
 
 .about #wife {
+  margin-top: 50px;
   width: 100%;
 }
 
@@ -84,6 +89,45 @@ nav ul li a b {
 
 .skills .progress {
   margin: 5px;
+}
+
+.project-wrapper {
+  margin-top: .5em;
+  display: block;
+  position: relative;
+}
+
+.project-wrapper .web img {
+  height: 280px;
+}
+
+.project-wrapper img {
+  border: 1px solid #a33a7b;
+  border-radius: 1em;
+  width: 100%;
+  height: 200px;
+}
+
+.project-wrapper:hover .project-wrapper-inner {
+  top: 0px;
+  opacity: 0.9;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.project-wrapper .project-wrapper-inner {
+  background: rgba(170, 31, 117, 0.9);
+  border-radius: 1em;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  padding: 20px;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: white;
 }
 
 .item {

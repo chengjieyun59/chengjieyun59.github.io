@@ -5,6 +5,7 @@ html, body {
   padding: 0px;
   font-family: 'Source Sans Pro', sans-serif;
   scroll-behavior: smooth;
+  color: #656565;
   .scrollOffset {
     display: block;
     position: relative;
@@ -18,23 +19,14 @@ html, body {
   }
 }
 
-header {
-  margin: 60px 0px 0px 0px;
-  padding: 40px;
-  background-image: url('/assets/purple_background.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: auto;
-  color: white;
-}
-
 nav {
   background-color: $primary-color;
+  position: fixed;
   min-height: 60px;
   padding: 0px;
   ul {
     margin: 0;
-    padding: 10px 30px 10px 10px;
+    padding: 10px;
     position: absolute;
     top: 0;
     right: 0;
@@ -69,6 +61,138 @@ nav {
           font-size: 15px;
         }
       }
+    }
+  }
+}
+
+#header {
+  margin: 60px 0px 0px 0px;
+  padding-bottom: 40px;
+  background-image: url('/assets/purple_background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 130%;
+  height: auto;
+  color: white;
+  .css-typing h1 {
+    border-right: .15em solid white;
+    font-family: "Courier";
+    font-size: 4vw;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: type 500ms steps(40, end);
+    animation: type 500ms steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  .css-typing h1:nth-child(1) {
+    width: 2em;
+    -webkit-animation: type 500ms steps(40, end);
+    animation: type 500ms steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  .css-typing h1:nth-child(2) {
+    width: 9em;
+    opacity: 0;
+    -webkit-animation: type2 1s steps(40, end);
+    animation: type2 1s steps(40, end);
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  .css-typing h1:nth-child(3) {
+    width: 16em;
+    opacity: 0;
+    -webkit-animation: type3 2s steps(600, end), blink .5s step-end infinite alternate;
+    animation: type3 2s steps(600, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      border: none;
+    }
+  }
+  @-webkit-keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      border: none;
+    }
+  }
+  @keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  @-webkit-keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  @keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @-webkit-keyframes blink {
+    50% {
+      border-color: tranparent;
     }
   }
 }

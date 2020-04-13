@@ -4,13 +4,22 @@ html, body {
   margin: 0px;
   padding: 0px;
   font-family: 'Source Sans Pro', sans-serif;
+  scroll-behavior: smooth;
+  .scrollOffset {
+    display: block;
+    position: relative;
+    top: -60px;
+  }
+  h1, h2, h4, h5 {
+    margin-top: 0.5em;
+  }
   h4, h5 {
-    margin-top: 1em;
+    text-align: center;
   }
 }
 
 header {
-  margin: 0px;
+  margin: 60px 0px 0px 0px;
   padding: 40px;
   background-image: url('/assets/purple_background.jpg');
   background-repeat: no-repeat;
@@ -83,7 +92,7 @@ nav {
   }
 }
 
-.project-wrapper {
+.projects .project-wrapper {
   margin-top: .5em;
   display: block;
   position: relative;
@@ -115,6 +124,9 @@ nav {
     z-index: 1;
     transition: 0.5s;
     color: white;
+    h6 {
+      font-weight: 600;
+    }
     li {
       list-style-type: none;
     }
@@ -130,8 +142,26 @@ nav {
   }
 }
 
-.item {
-  background-color: blue;
-  color: red;
-  height: 300px;
+footer {
+  background-color: $primary-color;
+  height: auto;
+  color: white;
+  padding: 0.5em;
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    li {
+      padding: 1em 1em 0 1em;
+      i {
+        font-size: 2em;
+        color: white;
+      }
+    }
+  }
+  small {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 }

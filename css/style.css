@@ -68,6 +68,24 @@ nav ul li a b {
   font-size: 15px;
 }
 
+.about {
+  padding: 20px;
+}
+
+.about #wife {
+  width: 100%;
+}
+
+.about article {
+  color: black;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.skills .progress {
+  margin: 5px;
+}
+
 .item {
   background-color: blue;
   color: red;

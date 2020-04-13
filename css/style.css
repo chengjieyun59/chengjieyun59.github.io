@@ -78,7 +78,7 @@ nav ul li a b {
 #header {
   margin: 60px 0px 0px 0px;
   padding-bottom: 40px;
-  background-image: url("/assets/purple_background.jpg");
+  background: url("../assets/purple_background.jpg");
   background-repeat: no-repeat;
   background-size: 100% 130%;
   height: auto;

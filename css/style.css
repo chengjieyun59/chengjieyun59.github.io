@@ -102,7 +102,7 @@ nav ul li a b {
 }
 
 .project-wrapper img {
-  border: 1px solid #a33a7b;
+  border: 1px solid #aa1f75;
   border-radius: 1em;
   width: 100%;
   height: 200px;
@@ -128,6 +128,18 @@ nav ul li a b {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: white;
+}
+
+.project-wrapper .project-wrapper-inner li {
+  list-style-type: none;
+}
+
+.contacts .btn {
+  background-color: #aa1f75;
+}
+
+.contacts i {
+  color: #aa1f75;
 }
 
 .item {

@@ -1,4 +1,4 @@
-$primary-color: #7510F7;
+$primary-color: #aa1f75;
 
 html, body {
   margin: 0px;
@@ -20,7 +20,7 @@ header {
 }
 
 nav {
-  background-color: #aa1f75;
+  background-color: $primary-color;
   min-height: 60px;
   padding: 0px;
   ul {
@@ -91,7 +91,7 @@ nav {
     height: 280px;
   }
   img {
-    border: 1px solid #a33a7b;
+    border: 1px solid $primary-color;
     border-radius: 1em;
     width: 100%;
     height: 200px;
@@ -115,6 +115,18 @@ nav {
     z-index: 1;
     transition: 0.5s;
     color: white;
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+.contacts {
+  .btn {
+    background-color: $primary-color;
+  }
+  i {
+    color: $primary-color;
   }
 }
 

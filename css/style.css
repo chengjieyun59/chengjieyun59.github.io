@@ -117,7 +117,7 @@ nav ul li a b {
 }
 
 #header .css-typing h1:nth-child(3) {
-  width: 16em;
+  width: 13em;
   opacity: 0;
   -webkit-animation: type3 2s steps(600, end), blink 0.5s step-end infinite alternate;
   animation: type3 2s steps(600, end), blink 0.5s step-end infinite alternate;
@@ -246,6 +246,8 @@ nav ul li a b {
 
 .projects .project-wrapper .web img {
   height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .projects .project-wrapper img {

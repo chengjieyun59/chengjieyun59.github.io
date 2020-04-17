@@ -102,7 +102,7 @@ nav {
     animation-fill-mode: forwards;
   }
   .css-typing h1:nth-child(3) {
-    width: 16em;
+    width: 13em;
     opacity: 0;
     -webkit-animation: type3 2s steps(600, end), blink .5s step-end infinite alternate;
     animation: type3 2s steps(600, end), blink .5s step-end infinite alternate;
@@ -222,6 +222,7 @@ nav {
   position: relative;
   .web img{
     height: 280px;
+    object-fit: cover;
   }
   img {
     border: 1px solid $primary-color;

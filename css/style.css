@@ -117,7 +117,7 @@ nav ul li a b {
 }
 
 #header .css-typing h1:nth-child(3) {
-  width: 13em;
+  width: 12.5em;
   opacity: 0;
   -webkit-animation: type3 2s steps(600, end), blink 0.5s step-end infinite alternate;
   animation: type3 2s steps(600, end), blink 0.5s step-end infinite alternate;
@@ -234,8 +234,12 @@ nav ul li a b {
   font-weight: 300;
 }
 
-.skills .progress {
-  margin: 5px;
+.about #skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .projects .project-wrapper {

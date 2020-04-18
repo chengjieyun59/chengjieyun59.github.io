@@ -102,7 +102,7 @@ nav {
     animation-fill-mode: forwards;
   }
   .css-typing h1:nth-child(3) {
-    width: 13em;
+    width: 12.5em;
     opacity: 0;
     -webkit-animation: type3 2s steps(600, end), blink .5s step-end infinite alternate;
     animation: type3 2s steps(600, end), blink .5s step-end infinite alternate;
@@ -208,11 +208,9 @@ nav {
     font-size: 1em;
     font-weight: 300;
   }
-}
-
-.skills {
-  .progress {
-    margin: 5px;
+  #skills {
+    display: flex;
+    justify-content: space-around;
   }
 }
 

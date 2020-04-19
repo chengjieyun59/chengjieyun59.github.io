@@ -274,6 +274,14 @@ nav li a:hover {
   border-radius: 10%;
 }
 
+.contacts #message {
+  height: 20em;
+}
+
+.contacts #status {
+  color: #aa1f75;
+}
+
 .contacts .btn {
   background-color: #aa1f75;
 }

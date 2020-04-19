@@ -169,68 +169,43 @@
   <section class="container contacts" data-aos="fade-up">
     <section class="mb-4">
       <h2 class="h1-responsive font-weight-bold my-4">Let's talk more</h2>
-      <div class="row">
-        <!-- Grid column 1 -->
-        <div class="col-md-9 mb-md-0 mb-5">
-          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-            <!--Grid row 1-->
-            <div class="row">
-              <div class="col-md-6">
-                <div class="md-form mb-0">
-                  <input type="text" id="name" name="name" class="form-control">
-                  <label for="name" class="">Your name</label>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="md-form mb-0">
-                  <input type="text" id="email" name="email" class="form-control">
-                  <label for="email" class="">Your email</label>
-                </div>
+        <form id="contact-form">
+          <div class="row justify-content-center">
+            <div class="col-lg-7 col-md-9 col-sm-12">
+              <div class="md-form">
+                <input type="text" id="subject" class="form-control">
+                <label for="subject">Subject</label>
               </div>
             </div>
-            <!--Grid row 2-->
-            <div class="row">
-              <div class="col-md-12">
-                <div class="md-form mb-0">
-                  <input type="text" id="subject" name="subject" class="form-control">
-                  <label for="subject" class="">Subject</label>
-                </div>
+            <div class="col-lg-7 col-md-9 col-sm-12">
+              <div class="md-form">
+                <textarea type="text" id="message" class="form-control md-textarea"></textarea>
+                <label for="message">Your message</label>
               </div>
             </div>
-            <!--Grid row 3 -->
-            <div class="row">
-              <div class="col-md-12">
-                <div class="md-form">
-                  <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                  <label for="message">Your message</label>
-                </div>
-              </div>
-            </div>
-          </form>
-
-          <div class="text-center text-md-left">
-            <a class="btn" onclick="validateForm();">Send</a>
           </div>
-          <div class="status"></div>
+        </form>
+        <div class="text-center text-md-center">
+          <a class="btn" onclick="sendEmail();">Send</a>
+          <div id="status"></div>
         </div>
-        <!--Grid column 2-->
-        <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li>
-                  <i class="fas fa-map-marker-alt fa-2x"></i>
-                  <p>Los Angeles, CA 90045</p>
-                </li>
-                <li>
-                  <i class="fas fa-phone mt-4 fa-2x"></i>
-                  <p>714-785-2189</p>
-                </li>
-                <li>
-                  <i class="fas fa-envelope mt-4 fa-2x"></i>
-                  <p>cat@illusionalcoder.com</p>
-                </li>
-            </ul>
+        <br/><br/>
+        <div class="row text-center justify-content-center">
+          <ul class="list-unstyled">
+            <li>
+              <i class="fas fa-map-marker-alt fa-2x"></i>
+              <p>Los Angeles, CA 90045</p>
+            </li>
+            <li>
+              <i class="fas fa-phone mt-4 fa-2x"></i>
+              <p>(714)785-2189</p>
+            </li>
+            <li>
+              <i class="fas fa-envelope mt-4 fa-2x"></i>
+              <p>cat@illusionalcoder.com</p>
+            </li>
+          </ul>
         </div>
-      </div>
     </section>
   </section>
 
@@ -239,10 +214,10 @@
       <li><a href="https://github.com/chengjieyun59" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
       <li><a href="https://www.linkedin.com/in/jie-yun-catherine-cheng/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
       <li><a href="https://angel.co/jie-yun-catherine-cheng" target="_blank" rel="noopener noreferrer"><i class="fab fa-angellist"></i></a></li>
-      <li><a href="mailto:cat@illusionalcoder.com?Subject=Hello from your website&body=This is cool" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope-open"></i></a></li>
+      <li><a href="mailto:cat@illusionalcoder.com?Subject=Hello from your website&body=Hi Catherine," target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope-open"></i></a></li>
       <li><a href="https://www.youtube.com/channel/UCHGX64BJVUdGh84U1m08plg" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a></li>
     </ul>
-    <small>Copyright © 2020 Jie Yun Catherine Cheng • Web Developer </small>
+    <small>Copyright © 2020 Jie Yun Catherine Cheng • Software Engineer </small>
   </footer>
 
   <!-- JQuery -->
@@ -277,59 +252,20 @@
       anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
     });
   </script>
-  <!-- Validate before emailing -->
-  <script>
-    function validateForm() {
-      var name =  document.getElementById('name').value;
-      if (name == "") {
-          document.querySelector('.status').innerHTML = "Name cannot be empty";
-          return false;
-      }
-      var email =  document.getElementById('email').value;
-      if (email == "") {
-          document.querySelector('.status').innerHTML = "Email cannot be empty";
-          return false;
-      } else {
-          var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-          if(!re.test(email)){
-              document.querySelector('.status').innerHTML = "Email format invalid";
-              return false;
-          }
-      }
-      var subject =  document.getElementById('subject').value;
-      if (subject == "") {
-          document.querySelector('.status').innerHTML = "Subject cannot be empty";
-          return false;
-      }
-      var message =  document.getElementById('message').value;
-      if (message == "") {
-          document.querySelector('.status').innerHTML = "Message cannot be empty";
-          return false;
-      }
-      document.querySelector('.status').innerHTML = "Sending...";
-      // document.getElementById('status').innerHTML = "Sending...";
-      formData = {
-      'name'     : $('input[name=name]').val(),
-      'email'    : $('input[name=email]').val(),
-      'subject'  : $('input[name=subject]').val(),
-      'message'  : $('textarea[name=message]').val()
-      };
 
-      $.ajax({
-      url : "mail.php",
-      type: "POST",
-      data : formData,
-      success: function(data, textStatus, jqXHR)
-      {
-      $('#status').text(data.message);
-      if (data.code) //If mail was sent successfully, reset the form.
-      $('#contact-form').closest('form').find("input[type=text], textarea").val("");
-      },
-      error: function (jqXHR, textStatus, errorThrown)
-      {
-      $('#status').text(jqXHR);
+  <script>
+    function sendEmail() {
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+      console.log('subject: ', subject, 'message: ', message)
+      if (subject === '') {
+        document.querySelector('#status').innerHTML = `What's your subject?`;
+      } else if (message === '') {
+        document.querySelector('#status').innerHTML = `What's your message?`;
+      } else {
+        document.querySelector('#status').innerHTML = null;
+        window.location.href = `mailto:cat@illusionalcoder.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
       }
-      });
     }
   </script>
 </body>

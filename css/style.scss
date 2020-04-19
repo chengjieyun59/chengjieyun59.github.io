@@ -242,6 +242,12 @@ nav {
 }
 
 .contacts {
+  #message {
+    height: 20em;
+  }
+  #status {
+    color: $primary-color;
+  }
   .btn {
     background-color: $primary-color;
   }

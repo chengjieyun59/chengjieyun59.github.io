@@ -22,57 +22,24 @@ html h4, html h5, body h4, body h5 {
 
 nav {
   background-color: #aa1f75;
-  position: fixed;
-  min-height: 60px;
-  padding: 0px;
 }
 
-nav ul {
-  margin: 0;
-  padding: 10px;
-  position: absolute;
-  top: 0;
-  right: 0;
+nav .navbar-brand {
+  margin-left: 3vw;
 }
 
-nav ul li {
-  font-size: 12pt;
-  display: block;
-  float: left;
-  width: 50px;
-  text-align: center;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+nav li {
+  margin-right: 3rem;
 }
 
-nav ul li a {
-  color: #eee;
-  font-size: 22pt;
-  text-decoration: none;
-  display: block;
+nav li a {
+  font-size: 1.2em;
 }
 
-nav ul li a:hover {
-  color: #fff;
-}
-
-nav ul li a:hover i {
-  display: none;
-}
-
-nav ul li a:hover b {
-  display: block;
-  text-decoration: none;
-  padding-top: 10px;
-}
-
-nav ul li a i {
-  color: #fff;
-}
-
-nav ul li a b {
-  display: none;
-  font-size: 15px;
+nav li a:hover {
+  color: white;
+  -webkit-text-decoration-style: double;
+          text-decoration-style: double;
 }
 
 #header {

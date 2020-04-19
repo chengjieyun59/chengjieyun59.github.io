@@ -21,45 +21,16 @@ html, body {
 
 nav {
   background-color: $primary-color;
-  position: fixed;
-  min-height: 60px;
-  padding: 0px;
-  ul {
-    margin: 0;
-    padding: 10px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    li {
-      font-size: 12pt;
-      display: block;
-      float: left;
-      width: 50px;
-      text-align: center;
-      transition: all 0.2s ease-in-out;
-      a {
-        color: #eee;
-        font-size: 22pt;
-        text-decoration: none;
-        display: block;
-        &:hover {
-          color: #fff;
-          i {
-            display: none;
-          }
-          b {
-            display: block;
-            text-decoration: none;
-            padding-top: 10px;
-          }
-        }
-        i {
-          color: #fff;
-        }
-        b {
-          display: none;
-          font-size: 15px;
-        }
+  .navbar-brand {
+    margin-left: 3vw;
+  }
+  li {
+    margin-right: 3rem;
+    a {
+      font-size: 1.2em;
+      &:hover {
+        color: white;
+        text-decoration-style: double;
       }
     }
   }

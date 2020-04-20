@@ -1,11 +1,12 @@
-$primary-color: #aa1f75;
+$primary-color: #00a8cc;
+$text-color: #656565;
 
 html, body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
-  color: #656565;
+  color: $text-color;
   .scrollOffset {
     display: block;
     position: relative;
@@ -17,20 +18,35 @@ html, body {
   h4, h5 {
     text-align: center;
   }
+  article a {
+    color: $primary-color;
+    &:hover {
+      color: $primary-color;
+      text-decoration: underline;
+    }
+  }
 }
 
 nav {
-  background-color: $primary-color;
+  background-color: white;
+  letter-spacing: 2px;
   .navbar-brand {
     margin-left: 3vw;
   }
+  #logo {
+    height: 3em;
+  }
   li {
     margin-right: 3rem;
+    font-weight: 400;
     a {
-      font-size: 1.2em;
+      font-size: 1em;
+      border-bottom: 5px solid white;
       &:hover {
-        color: white;
+        color: $primary-color !important;
         text-decoration-style: double;
+        border-bottom: 5px solid $primary-color;
+        
       }
     }
   }
@@ -39,9 +55,9 @@ nav {
 #header {
   margin: 60px 0px 0px 0px;
   padding-bottom: 40px;
-  background: url('../assets/purple_background.jpg');
+  background: url('../assets/background.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 130%;
+  background-size: 100%;
   height: auto;
   color: white;
   .css-typing h1 {
@@ -207,7 +223,7 @@ nav {
     }
   }
   .project-wrapper-inner {
-    background: rgba(170, 31, 117, 0.9);
+    background: $primary-color;
     color: white;
     border-radius: 1em;
     top: 0px;

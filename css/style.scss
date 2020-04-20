@@ -1,5 +1,8 @@
-$primary-color: #00a8cc;
-$text-color: #656565;
+// color palette: https://colorhunt.co/palette/171392
+$text-color: #142850;
+$primary-color: #27496d;
+$secondary-color: #0c7b93;
+$ternary-color: #00a8cc;
 
 html, body {
   margin: 0px;
@@ -19,9 +22,9 @@ html, body {
     text-align: center;
   }
   a {
-    color: $primary-color;
+    color: $ternary-color;
     &:hover {
-      color: $primary-color;
+      color: $secondary-color;
       text-decoration: underline;
     }
   }
@@ -34,19 +37,17 @@ nav {
     margin-left: 3vw;
   }
   #logo {
-    height: 3em;
+    height: 2.2em;
   }
   li {
     margin-right: 3rem;
     font-weight: 400;
     a {
-      font-size: 1em;
-      border-bottom: 5px solid white;
+      font-size: .8em;
+      border-bottom: 2px solid white;
       &:hover {
-        color: $primary-color !important;
         text-decoration-style: double;
-        border-bottom: 5px solid $primary-color;
-        
+        border-bottom: 2px solid $primary-color;
       }
     }
   }
@@ -205,7 +206,7 @@ nav {
   .grid-gutter {
     padding: 1em;
     height: 100%;
-    border: 2px solid $primary-color;
+    border: 2px solid $secondary-color;
     border-radius: 6px;
   }
   .post-card {
@@ -230,13 +231,14 @@ nav {
         font-weight: 600;
       }
       #download {
-        background-color: $primary-color;
+        background-color: $secondary-color;
         color: white;
       }
     }
     ul {
       text-align: left;
       li {
+        color: $secondary-color;
         display: inline-block;
         overflow: wrap;
         margin-right: 1rem;
@@ -256,13 +258,40 @@ nav {
   .btn {
     background-color: $primary-color;
   }
+  p {
+    margin: 0;
+  }
   i {
+    font-size: 1.4em;
     color: $primary-color;
   }
 }
 
+#back-to-top {
+  width: 40px;
+  line-height: 40px;
+  z-index: 999;
+  cursor: pointer;
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  position: fixed;
+  bottom: 3em;
+  right: .4em;
+  color: $text-color;
+  background-color: #DDD;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+
 footer {
-  background-color: $primary-color;
+  background-color: $text-color;
   height: auto;
   color: white;
   padding: 0.5em;
@@ -270,10 +299,12 @@ footer {
     display: flex;
     justify-content: center;
     list-style-type: none;
+    padding-inline-start: 0px;
+    margin: 0;
     li {
-      padding: 1em 1em 0 1em;
+      padding: 0.2em 0.5em 0.2em 0.5em;
       i {
-        font-size: 2em;
+        font-size: 1.2em;
         color: white;
       }
     }

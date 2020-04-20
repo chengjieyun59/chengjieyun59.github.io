@@ -3,7 +3,7 @@ html, body {
   padding: 0px;
   font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
-  color: #656565;
+  color: #142850;
 }
 
 html .scrollOffset, body .scrollOffset {
@@ -25,7 +25,7 @@ html a, body a {
 }
 
 html a:hover, body a:hover {
-  color: #00a8cc;
+  color: #0c7b93;
   text-decoration: underline;
 }
 
@@ -39,7 +39,7 @@ nav .navbar-brand {
 }
 
 nav #logo {
-  height: 3em;
+  height: 2.2em;
 }
 
 nav li {
@@ -48,15 +48,14 @@ nav li {
 }
 
 nav li a {
-  font-size: 1em;
-  border-bottom: 5px solid white;
+  font-size: .8em;
+  border-bottom: 2px solid white;
 }
 
 nav li a:hover {
-  color: #00a8cc !important;
   -webkit-text-decoration-style: double;
           text-decoration-style: double;
-  border-bottom: 5px solid #00a8cc;
+  border-bottom: 2px solid #27496d;
 }
 
 #header {
@@ -229,7 +228,7 @@ nav li a:hover {
 .projects .grid-gutter {
   padding: 1em;
   height: 100%;
-  border: 2px solid #00a8cc;
+  border: 2px solid #0c7b93;
   border-radius: 6px;
 }
 
@@ -266,7 +265,7 @@ nav li a:hover {
 }
 
 .projects .post-card .post-card-content #download {
-  background-color: #00a8cc;
+  background-color: #0c7b93;
   color: white;
 }
 
@@ -275,6 +274,7 @@ nav li a:hover {
 }
 
 .projects .post-card ul li {
+  color: #0c7b93;
   display: inline-block;
   overflow: wrap;
   margin-right: 1rem;
@@ -285,19 +285,45 @@ nav li a:hover {
 }
 
 .contacts #status {
-  color: #00a8cc;
+  color: #27496d;
 }
 
 .contacts .btn {
-  background-color: #00a8cc;
+  background-color: #27496d;
+}
+
+.contacts p {
+  margin: 0;
 }
 
 .contacts i {
-  color: #00a8cc;
+  font-size: 1.4em;
+  color: #27496d;
+}
+
+#back-to-top {
+  width: 40px;
+  line-height: 40px;
+  z-index: 999;
+  cursor: pointer;
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  position: fixed;
+  bottom: 3em;
+  right: .4em;
+  color: #142850;
+  background-color: #DDD;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+#back-to-top:hover {
+  background-color: #0c7b93;
 }
 
 footer {
-  background-color: #00a8cc;
+  background-color: #142850;
   height: auto;
   color: white;
   padding: 0.5em;
@@ -311,14 +337,17 @@ footer ul {
       -ms-flex-pack: center;
           justify-content: center;
   list-style-type: none;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  margin: 0;
 }
 
 footer ul li {
-  padding: 1em 1em 0 1em;
+  padding: 0.2em 0.5em 0.2em 0.5em;
 }
 
 footer ul li i {
-  font-size: 2em;
+  font-size: 1.2em;
   color: white;
 }
 

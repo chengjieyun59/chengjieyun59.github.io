@@ -252,6 +252,13 @@ nav {
 
 
 .contacts {
+  #subject {
+    ::placeholder {
+      color: #929292;
+      font-size: 1rem;
+      font-weight: 100;
+    }
+  }
   #message {
     height: 20em;
   }

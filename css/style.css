@@ -284,6 +284,30 @@ nav li a:hover {
   margin-right: 1rem;
 }
 
+.contacts #subject ::-webkit-input-placeholder {
+  color: #929292;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.contacts #subject :-ms-input-placeholder {
+  color: #929292;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.contacts #subject ::-ms-input-placeholder {
+  color: #929292;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.contacts #subject ::placeholder {
+  color: #929292;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
 .contacts #message {
   height: 20em;
 }

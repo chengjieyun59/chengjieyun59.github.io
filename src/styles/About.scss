@@ -1,0 +1,17 @@
+#about-section {
+  background-color: #f8f1f1;
+  #collage {
+    padding-top: 3em;
+    padding-bottom: 3.5em;
+    #wife {
+      width: 60%;
+      transform: rotate(-5deg);
+    }
+    #cats {
+      width: 40%;
+      transform: rotate(10deg);
+      margin-top: -40%;
+      margin-left: 60%;
+    }
+  }
+}

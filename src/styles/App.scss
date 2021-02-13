@@ -1,0 +1,43 @@
+@import "~bootstrap/scss/bootstrap";
+
+// color palette: https://colorhunt.co/palette/171392
+$text-color: #142850;
+$primary-color: #27496d;
+$secondary-color: #0c7b93;
+$ternary-color: #00a8cc;
+
+html, body {
+  font-family: "Roboto", "Open Sans", "sans-serif";
+  color: $text-color;
+  a {
+    color: $ternary-color;
+    &:hover {
+      color: $secondary-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+#navbar {
+  height: 10vh;
+  .nav-li {
+    color: $text-color;
+    letter-spacing: 0.2rem;
+    font-size: .8em;
+    border-bottom: 2px solid clear;
+    &:hover {
+      color: $secondary-color;
+      border-bottom: 2px solid $secondary-color;
+    }
+  }
+}
+
+.section {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+h3 {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}

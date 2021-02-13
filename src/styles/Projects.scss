@@ -1,0 +1,11 @@
+#project-card {
+  ul {
+    padding: 0;
+    text-align: left;
+    li {
+      display: inline-block;
+      overflow: wrap;
+      margin-right: 1rem;
+    }
+  }
+}

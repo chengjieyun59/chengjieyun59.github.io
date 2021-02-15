@@ -1,0 +1,19 @@
+p {
+  text-align: center;
+}
+
+#cat-image-container, #button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3vh;
+}
+
+img {
+  border-radius: 8px;
+  width: 20vw;
+}
+
+button {
+  width: 20vw;
+  padding: 0.5em;
+}

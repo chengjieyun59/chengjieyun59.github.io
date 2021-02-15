@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer portfolio | Catherine Cheng</title>
+  <link href="assets/illusionalCoder.png" rel="icon" type="image/png" sizes="16x16">
+  <link href="assets/illusionalCoder.png" rel="icon" type="image/png" sizes="32x32">
+  <link href="assets/illusionalCoder.png" rel="icon" type="image/png" sizes="96x96">
+  <link href="css/404.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Whoops!</h1>
+  <h4>404 Page Not Found</h4>
+  <p>One of our developers must be punished for their unacceptable failure!</p>
+  <p>Pick Who To Fire</p>
+  <div id="cat-image-container">
+    <img src="assets/cat1.jpg" alt="Sesame: black cat with mask"/>
+    <img src="assets/cat2.jpg" alt="Sunflower: innocent-looking tabby cat"/>
+    <img src="assets/cat3.jpg" alt="Salmon: grumpy ginger kitten"/>
+    <img src="assets/cat4.jpg" alt="Smokey: suspicious-looking grey cat"/>
+  </div>
+  <div id="button-container">
+    <button type="button" data-cat-id="1" onclick="fire(this)">Sesame</button>
+    <button type="button" data-cat-id="2" onclick="fire(this)">Sunflower</button>
+    <button type="button" data-cat-id="3" onclick="fire(this)">Salmon</button>
+    <button type="button" data-cat-id="4" onclick="fire(this)">Smokey</button>
+  </div>
+  <p>In a forgiving mood? Let them all keep their jobs</p>
+  <p>Return to the <a href="https://illusionalcoder.com/" class="project-wrapper">homepage</a></p>
+  
+  <script>
+    function fire(btn) {
+      btn.style.visibility = "hidden"
+      const image = document.querySelectorAll("img")[btn.dataset.catId - 1]
+      image.src = "assets/fired.jpg"
+      setTimeout(function(){ window.location.href = "https://illusionalcoder.com/" }, 400)
+    }
+  </script>
+</body>
+</html>

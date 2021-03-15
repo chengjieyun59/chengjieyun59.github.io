@@ -56,6 +56,9 @@
     </div>
   </header>
 
+  <!-- <iframe src="https://www.google.com/logos/2010/pacman10-i.html"> -->
+  <!-- <iframe width='580' height='260' src="https://www.google.com/logos/2010/pacman10-i.html" frameborder="0" allowfullscreen></iframe> -->
+
   <a class="scrollOffset" id="about"></a>
   <section class="container about" data-aos="fade-up">
     <div class="row">
@@ -309,6 +312,22 @@
         window.location.href = `mailto:cat@illusionalcoder.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
       }
     }
+
+    console.log('Find the Easter Egg 🥚🍳')
+    function easterEgg(cb) {
+      var input = '';
+      var konamiCodeKeys = '38384040373937396665';
+      document.addEventListener('keydown', function (e) {
+        input += ("" + e.keyCode);
+        if (input === konamiCodeKeys) {
+          return cb();
+        }
+        if (!konamiCodeKeys.indexOf(input)) return;
+        input = ("" + e.keyCode);
+      });
+    }
+    easterEgg(function () {alert('Send me a screenshot of this alert through LinkedIn @cat-cheng or email <cat@illusionalcoder.com> for a surprise 🍾🎉🎊')})
+
   </script>
 </body>
 </html>

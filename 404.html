@@ -28,14 +28,14 @@
     <button type="button" data-cat-id="4" onclick="fire(this)">Smokey</button>
   </div>
   <p>In a forgiving mood? Let them all keep their jobs</p>
-  <p>Return to the <a href="https://illusionalcoder.com/" class="project-wrapper">homepage</a></p>
+  <p>Return to the <a href="https://chengjieyun59.github.io/" class="project-wrapper">homepage</a></p>
   
   <script>
     function fire(btn) {
       btn.style.visibility = "hidden"
       const image = document.querySelectorAll("img")[btn.dataset.catId - 1]
       image.src = "assets/fired.jpg"
-      setTimeout(function(){ window.location.href = "https://illusionalcoder.com/" }, 400)
+      setTimeout(function(){ window.location.href = "https://chengjieyun59.github.io/" }, 400)
     }
   </script>
 </body>

@@ -1,3 +1,3 @@
 # Personal website
 
-To view the website, check out https://illusionalcoder.com
+To view the website, check out https://chengjieyun59.github.io/

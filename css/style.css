@@ -54,7 +54,7 @@ nav li a {
 
 nav li a:hover {
   -webkit-text-decoration-style: double;
-          text-decoration-style: double;
+  text-decoration-style: double;
   border-bottom: 2px solid #27496d;
 }
 
@@ -222,11 +222,7 @@ nav li a:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.about #skills ul {
-  padding-left: 20px;
+  justify-content: space-around;
 }
 
 .projects .grid-gutter {
@@ -242,8 +238,8 @@ nav li a:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
@@ -258,7 +254,7 @@ nav li a:hover {
 .projects .post-card .post-card-content {
   margin: 1rem;
   border-bottom: 1px solid #ababab;
-  padding-bottom: 1em;
+  padding-bottom: 1rem;
 }
 
 .projects .post-card .post-card-content h3 {
@@ -274,7 +270,7 @@ nav li a:hover {
 }
 
 .projects .post-card ul {
-  text-align: left;
+  padding-inline-start: 1rem;
 }
 
 .projects .post-card ul li {
@@ -362,11 +358,11 @@ footer ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   list-style-type: none;
   -webkit-padding-start: 0px;
-          padding-inline-start: 0px;
+  padding-inline-start: 0px;
   margin: 0;
 }
 
@@ -384,8 +380,8 @@ footer small {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
